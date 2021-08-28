@@ -1,11 +1,40 @@
 ## Docker commands used to build the application 
 # TODO: insert the docker build command
+docker build -t techtrends .
 
 ## Docker commands used to run the application
 # TODO: insert the docker run command
+docker run -d -p 7111:3111 techtrends
+7f9af1006c13dd2995793bf5e121ef5e0ccfec59b2413a3f1d18f5e23b7dfb4c
 
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
+docker logs 7f9
 
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug:2021-08-28 19:43:00,605,  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:2021-08-28 19:43:05,625, Article does not exist
+INFO:werkzeug:2021-08-28 19:43:05,638, 172.17.0.1 - - [28/Aug/2021 19:43:05] "GET /022 HTTP/1.1" 404 -
+INFO:werkzeug:2021-08-28 19:43:06,899, 172.17.0.1 - - [28/Aug/2021 19:43:06] "GET / HTTP/1.1" 200 -
+INFO:app:2021-08-28 19:43:12,434, Article "KubeCon + CloudNativeCon 2021" retrieved!
+INFO:werkzeug:2021-08-28 19:43:12,439, 172.17.0.1 - - [28/Aug/2021 19:43:12] "GET /2 HTTP/1.1" 200 -
+INFO:app:2021-08-28 19:43:15,940, "About Us" page retrieved
+INFO:werkzeug:2021-08-28 19:43:15,944, 172.17.0.1 - - [28/Aug/2021 19:43:15] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:2021-08-28 19:43:17,861, 172.17.0.1 - - [28/Aug/2021 19:43:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2021-08-28 19:43:20,797, 172.17.0.1 - - [28/Aug/2021 19:43:20] "GET /create HTTP/1.1" 200 -
+INFO:app:2021-08-28 19:43:33,148, Article "The kubectl  magic" created!
+INFO:werkzeug:2021-08-28 19:43:33,150, 172.17.0.1 - - [28/Aug/2021 19:43:33] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:2021-08-28 19:43:33,162, 172.17.0.1 - - [28/Aug/2021 19:43:33] "GET / HTTP/1.1" 200 -
+INFO:app:2021-08-28 19:43:37,080, Article "The kubectl  magic" retrieved!
+INFO:werkzeug:2021-08-28 19:43:37,081, 172.17.0.1 - - [28/Aug/2021 19:43:37] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:2021-08-28 19:43:45,526, 172.17.0.1 - - [28/Aug/2021 19:43:45] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:2021-08-28 19:43:50,870, 172.17.0.1 - - [28/Aug/2021 19:43:50] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2021-08-28 19:44:00,429, 172.17.0.1 - - [28/Aug/2021 19:44:00] "GET / HTTP/1.1" 200 -
+INFO:app:2021-08-28 19:44:03,640, Article "The kubectl  magic" retrieved!
+INFO:werkzeug:2021-08-28 19:44:03,642, 172.17.0.1 - - [28/Aug/2021 19:44:03] "GET /7 HTTP/1.1" 200 -
