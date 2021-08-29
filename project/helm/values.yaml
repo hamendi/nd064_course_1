@@ -19,12 +19,6 @@ resources:
     memory: 128Mi
 containerPort: 3111
 livenessProbe:
-  httpGet:
-    path: /healthz
-    port: 3111
-    scheme: HTTP
+  path: /healthz
 readinessProbe:
-  httpGet:
-    path: /healthz
-    port: 3111
-    scheme: HTTP
+  path: /healthz
